@@ -446,7 +446,7 @@ class BBCCoUkIE(InfoExtractor):
             fhd = dict(fmt)
             fhd['url'] = fmt['url'].replace('-video=5070000.m3u8', '-video=12000000.m3u8')
             fhd['height'] = 1080
-            fhd['tbr'] = fmt['abr']  12000
+            fhd['tbr'] = fmt['abr'] + 12000
             fhd['vbr'] = 12000
             fhd['width'] = 1920
             fhd['format_id'] = fmt['format_id'].replace(str(int(fmt['tbr'])), str(int(fhd['tbr'])))
